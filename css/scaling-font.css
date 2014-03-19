@@ -1,0 +1,31 @@
+@media (min-width: 1px) {
+    input,
+    textarea,
+    body {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 10cm) {
+    input,
+    textarea,
+    body {
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 20cm) {
+    input,
+    textarea,
+    body {
+        font-size: 13pt;
+    }
+}
+
+@media (min-width: 30cm) {
+    input,
+    textarea,
+    body {
+        font-size: 15pt;
+    }
+}

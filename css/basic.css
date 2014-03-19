@@ -1,0 +1,19 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+img {
+    border: 0;
+}
