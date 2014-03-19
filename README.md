@@ -7,3 +7,4 @@
 ### But also
 
 - add less to the project boilerplate
+- create online test suite
