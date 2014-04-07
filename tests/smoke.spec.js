@@ -1,4 +1,4 @@
-describe('homepage', function() {
+describe('SMOKE TEST - WHEN entering maciejmazur.com', function() {
     var driver;
 
     beforeEach(function() {
@@ -6,7 +6,7 @@ describe('homepage', function() {
         pro = protractor.getInstance();
     });
 
-    it('should have a container', function() {
+    it('SHOULD have a container', function() {
         var containers = element(by.css('.container'));
         var isAnyContainerPresent = containers.isPresent();
 

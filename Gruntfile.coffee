@@ -3,7 +3,6 @@
 module.exports = (grunt) ->
 
     configuration =
-        pkg: grunt.file.readJSON 'package.json'
         watch:
             less:
                 files: 'less/**/*.less'
@@ -29,7 +28,12 @@ module.exports = (grunt) ->
                 noColor: false
             tests:
                 options:
-                    configFile: '../protractor_conf.js'
+                    configFile: '../tests/protractor.js'
+        shell:
+            bower:
+                command: 'bower install'
+                    
+                
     
     grunt.initConfig configuration
 
@@ -37,8 +41,10 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-coffee'
     grunt.loadNpmTasks 'grunt-contrib-watch'
     grunt.loadNpmTasks 'grunt-protractor-runner'
+    grunt.loadNpmTasks 'grunt-shell'
 
     grunt.file.setBase 'front/'
 
-    grunt.registerTask 'default', ['less', 'coffee', 'watch']
-    grunt.registerTask 'e2e', ['protractor'] 
+    grunt.registerTask 'test', ['protractor']
+    grunt.registerTask 'setup', ['shell', 'less', 'coffee']
+    grunt.registerTask 'default', ['setup', 'watch']
