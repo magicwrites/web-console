@@ -1,14 +1,14 @@
 {
-    "name": "personal-website",
-    "description": "A personal website.",
+    "name": "web-console",
+    "description": "Web console test.",
     "version": "0.0.1",
     "dependencies": {
-        "express": ">= 3.0.4"
-    },
-    "devDependencies": {
-        "grunt": ">= 0.4.4",
-        "grunt-contrib-less": ">= 0.11.0",
-        "grunt-contrib-watch": ">= 0.6.1",
-        "grunt-contrib-coffee": ">= 0.10.1"
+        "express": "3.0.4",
+        "protractor": "0.21.0",
+        "grunt": "0.4.4",
+        "grunt-contrib-less": "0.11.0",
+        "grunt-contrib-watch": "0.6.1",
+        "grunt-contrib-coffee": "0.10.1",
+        "grunt-protractor-runner": "0.2.4"
     }
 }
